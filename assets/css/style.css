@@ -226,7 +226,7 @@ main .distination-section .header div:nth-child(2){
 
 main .distination-section .gallery{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 18px;
     margin-top: -10px;
@@ -239,6 +239,7 @@ main .distination-section .gallery .card{
     position: relative;
     color: #f2f2f2;
     overflow: hidden;
+    flex-shrink: 0;
 }
 
 main .distination-section .gallery .card:hover{
@@ -275,6 +276,10 @@ main .distination-section .gallery .card:hover .details{
 main .distination-section .gallery .card:nth-child(even){
     margin-top: 60px;
 }
+
+main .distination-section .gallery .right-arrow, main .distination-section .gallery .left-arrow{
+    display: none;
+}  
 
 footer{
     background-image: url('../images/footer.jpg');
@@ -523,13 +528,61 @@ footer section:nth-child(3) div.payment{
     }
 
     main .distination-section .gallery {
-        gap: 32px;
+        flex-wrap: nowrap;
+        gap: 45px;
+        position: relative;
+    }
+
+    main .distination-section .gallery .left-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        left: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .left-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
+    }
+
+    main .distination-section .gallery .right-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .right-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
     }
 
     main .distination-section .gallery .card {
         width: 275px;
         height: 400px;
         cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    main .distination-section .gallery .card {
+        width: 275px;
+        height: 400px;
+        cursor: pointer;
+        flex-shrink: 0;
     }
 
     main .distination-section .gallery .card:nth-child(even) {
@@ -592,6 +645,7 @@ footer section:nth-child(3) div.payment{
         font-size: 64px;
         line-height: 72px;
         margin-top: 80px;
+        text-align: center;
     }
 
     main .main-banner p {
@@ -635,13 +689,54 @@ footer section:nth-child(3) div.payment{
     }
 
     main .distination-section .gallery {
-        gap: 32px;
+        flex-wrap: nowrap;
+        gap: 10px;
+        position: relative;
+    }
+
+    main .distination-section .gallery .left-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        left: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .left-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
+    }
+
+    main .distination-section .gallery .right-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .right-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
     }
 
     main .distination-section .gallery .card {
         width: 275px;
         height: 400px;
         cursor: pointer;
+        flex-shrink: 0;
     }
 
     main .distination-section .gallery .card:nth-child(even) {
@@ -703,6 +798,7 @@ footer section:nth-child(3) div.payment{
         font-size: 64px;
         line-height: 72px;
         margin-top: 60px;
+        text-align: left;
     }
 
     main .main-banner p {
@@ -750,13 +846,55 @@ footer section:nth-child(3) div.payment{
     }
 
     main .distination-section .gallery {
-        gap: 35px;
+        flex-wrap: nowrap;
+        gap: 10px;
+        position: relative;
+        
+    }
+
+    main .distination-section .gallery .left-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        left: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .left-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
+    }
+
+    main .distination-section .gallery .right-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .right-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
     }
 
     main .distination-section .gallery .card {
         width: 275px;
         height: 400px;
         cursor: pointer;
+        flex-shrink: 0;
     }
 
     main .distination-section .gallery .card:nth-child(even) {
@@ -861,13 +999,54 @@ footer section:nth-child(3) div.payment{
     }
 
     main .distination-section .gallery {
-        gap: 80px;
+        flex-wrap: nowrap;
+        position: relative;
+        gap: 10px;
+    }
+
+    main .distination-section .gallery .left-arrow{
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        left: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .left-arrow:hover{
+        color: #e3f700;
+        background-color: #160647bc;
+    }
+
+    main .distination-section .gallery .right-arrow {
+        display: flex;
+        z-index: 9;
+        position: absolute;
+        right: 5px;
+        top: 40%;
+        color: #cecece;
+        padding: 5px;
+        border-radius: 50%;
+        background-color: #160647;
+        cursor: pointer;
+        transition: 0.1s;
+    }
+
+    main .distination-section .gallery .right-arrow:hover {
+        color: #e3f700;
+        background-color: #160647bc;
     }
 
     main .distination-section .gallery .card{
         width: 400px;
         height: 275px;
         cursor: pointer;
+        flex-shrink: 0;
     }
 
     main .distination-section .gallery .card .details{

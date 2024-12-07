@@ -1,6 +1,8 @@
 // global variables
 var screenScrollY;
 var sideMenu = false;
+var translateX = 0;
+
 
 // elements
 var navbarEl = document.getElementById('navbar');
@@ -8,6 +10,9 @@ var menuEl = document.querySelectorAll('header .menues a');
 var sideMenuEl = document.getElementById('sideMenu');
 var menuIconEl = document.getElementById('menuIcon');
 var menuIconDivEl = document.getElementById('menuIconDiv');
+var cardsEl = document.querySelectorAll('.card');
+var leftArrowEl = document.getElementById('left-arrow');
+var rightArrowEl = document.getElementById('right-arrow');
 
 // changes when scroll page
 document.addEventListener('scroll', () => {
@@ -73,19 +78,29 @@ menuIconEl.addEventListener('click', () => {
     }
 })
 
-window.addEventListener('resize', ()=>{
-    if (window.innerWidth >= 1200) {
-        sideMenuEl.style.display = 'none'
-        sideMenu = false;
-    }
-    else{
-        sideMenuEl.style.display = 'flex';
-        sideMenu = true;
-    }
+// function for explore more button
+function exploreMore() {
+    window.scrollTo({
+        top: window.innerHeight + window.screenScrollY,
+        behavior: 'smooth'
+    }) 
+}
 
+// distination section right left arrow function
+leftArrowEl.addEventListener('click', ()=>{
+    translateX += 410
+    cardsEl.forEach(card => {
+        card.style.transform = "translateX(" + translateX + "px)";
+        
+    })
 })
 
-
+rightArrowEl.addEventListener('click', ()=>{
+    translateX -= 410
+    cardsEl.forEach(card => {
+        card.style.transform = "translateX(" + translateX + "px)";
+    })
+})
 
 
 

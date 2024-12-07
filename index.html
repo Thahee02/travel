@@ -37,7 +37,7 @@
             you're dreaming of serene beach escapes, thrilling mountain treks, or cultural city tours, we’ve got you covered. Dive
             into expertly curated itineraries, handpicked accommodations, and insider tips to make your journey seamless and
             extraordinary.</p>
-            <button>Explore More ></button>
+            <button onclick="exploreMore()">Explore More ></button>
         </section>
         <section class="banner2">
             <img src="./assets/images/poster.jpg" alt="" class="poster1">
@@ -47,7 +47,7 @@
                 <h1>Create Unforgettable <br> Memories With Your Love</h1>
                 <p>Explore breathtaking destinations and share meaningful experiences with your loved one. From serene escapes to thrilling
                 adventures, create unforgettable memories that will last a lifetime.</p>
-                <button>MORE ABOUT US ></button>
+                <button onclick="exploreMore()">MORE ABOUT US ></button>
                 
             </div>
         </section>
@@ -62,7 +62,7 @@
                     uncover the beauty waiting to be explored.</p>
                 </div>
             </div>
-            <div class="gallery">
+            <div class="gallery" id="gallery">
                 <div class="card">
                     <img src="./assets/images/australia.jpg" alt="">
                     <div class="details">
@@ -97,6 +97,20 @@
                         <h1>France</h1>
                         <p>The epitome of romance, art, and exquisite cuisine.</p>
                     </div>
+                </div>
+
+                <!-- arrow keys -->
+                <div class="left-arrow" id="left-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
+                    </svg>
+                </div>
+                <div class="right-arrow" id="right-arrow">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
+                        <path fill="currentColor"
+                            d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
+                    </svg>
                 </div>
             </div>
         </section>
