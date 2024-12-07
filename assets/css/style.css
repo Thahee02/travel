@@ -406,6 +406,16 @@ footer section:nth-child(3) div.contact p span:hover {
     color: #c2d300;
 }
 
+footer section:nth-child(3) div.copyright a{
+    color: #e3f700;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+footer section:nth-child(3) div.copyright a:hover{
+    color: #c2d300;
+}
+
 footer section:nth-child(3) div.payment{
     display: flex;
     align-items: center;
