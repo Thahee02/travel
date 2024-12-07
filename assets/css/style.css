@@ -425,6 +425,7 @@ footer section:nth-child(3) div.payment{
     right: 0;
     background-color: #bcbcbc;
     display: none;
+    z-index: 10;
 }
 
 .side-menu ul{

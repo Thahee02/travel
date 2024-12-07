@@ -75,9 +75,14 @@ menuIconEl.addEventListener('click', () => {
 
 window.addEventListener('resize', ()=>{
     if (window.innerWidth >= 1200) {
-            sideMenuEl.style.display = 'none'
-            sideMenu = false;
+        sideMenuEl.style.display = 'none'
+        sideMenu = false;
     }
+    else{
+        sideMenuEl.style.display = 'flex';
+        sideMenu = true;
+    }
+
 })
 
 
