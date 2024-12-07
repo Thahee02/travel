@@ -89,17 +89,32 @@ function exploreMore() {
 // distination section right left arrow function
 leftArrowEl.addEventListener('click', ()=>{
     translateX += 410
+    if (translateX >= 820) {
+        leftArrowEl.style.display = 'none';       
+    }
+    else if (translateX < 900) {
+        leftArrowEl.style.display = 'block';
+    }
     cardsEl.forEach(card => {
         card.style.transform = "translateX(" + translateX + "px)";
         
     })
+    
 })
 
 rightArrowEl.addEventListener('click', ()=>{
     translateX -= 410
+    if (translateX == -820) {
+        rightArrowEl.style.display = 'none';
+    }
+    else{
+        rightArrowEl.style.display = 'flex';
+    }
     cardsEl.forEach(card => {
         card.style.transform = "translateX(" + translateX + "px)";
     })
+
+    
 })
 
 
