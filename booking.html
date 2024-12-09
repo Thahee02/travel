@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,108 +12,28 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header class="navbar" id="navbar">
         <div class="logo">TRAVEL</div>
         <div class="menues">
-            
+
             <ul>
-                <li><a href="booking.html">Booking</a></li>
+                <li><a href="./index.html">Home</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Blog</a></li>
                 <li><a href="#">About Us</a></li>
                 <li><a href="#">Contact Us</a></li>
             </ul>
-            
-            <div class="menu-icon-section" id="menuIconDiv" >
+
+            <div class="menu-icon-section" id="menuIconDiv">
                 <i class="fa fa-bars menu-icon" id="menuIcon" aria-hidden="true"></i>
             </div>
         </div>
     </header>
     <main>
-        <!-- banner section -->
-        <section class="main-banner">
-            <h1>Adventure Awaits You</h1>
-            <p>Discover the joy of exploration with our travel website, your ultimate gateway to unforgettable adventures! Whether
-            you're dreaming of serene beach escapes, thrilling mountain treks, or cultural city tours, we’ve got you covered. Dive
-            into expertly curated itineraries, handpicked accommodations, and insider tips to make your journey seamless and
-            extraordinary.</p>
-            <button onclick="exploreMore()">Explore More ></button>
-        </section>
-        <section class="banner2">
-            <img src="./assets/images/poster.jpg" alt="" class="poster1">
-            <img src="./assets/images/poster2.jpg" alt="">
-            <div class="content">
-                <p>Travel With Our Professionals ---<i class="fa fa-fighter-jet" aria-hidden="true"></i></p>
-                <h1>Create Unforgettable <br> Memories With Your Love</h1>
-                <p>Explore breathtaking destinations and share meaningful experiences with your loved one. From serene escapes to thrilling
-                adventures, create unforgettable memories that will last a lifetime.</p>
-                <button onclick="exploreMore()">MORE ABOUT US ></button>
-                
-            </div>
-        </section>
-        <section class="distination-section">
-            <div class="header">
-                <div>
-                    <p>Discover All Famous Places ---<i class="fa fa-fighter-jet" aria-hidden="true"></i></p>
-                    <h1>Explore Destinations</h1>
-                </div>
-                <div>
-                    <p>Discover stunning destinations around the world, from serene landscapes to vibrant cities. Start your journey and
-                    uncover the beauty waiting to be explored.</p>
-                </div>
-            </div>
-            <div class="gallery" id="gallery">
-                <div class="card">
-                    <img src="./assets/images/australia.jpg" alt="">
-                    <div class="details">
-                        <h1>Australia</h1>
-                        <p>A land of stunning beaches, unique wildlife, and vibrant cities.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/london.jpg" alt="">
-                    <div class="details">
-                        <h1>London</h1>
-                        <p>A historic city blending modern charm with iconic landmarks like Big Ben.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/switzerland.jpg" alt="">
-                    <div class="details">
-                        <h1>Switzerland</h1>
-                        <p>A paradise of alpine beauty, chocolate, and precision watches.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/japan.jpg" alt="">
-                    <div class="details">
-                        <h1>Japan</h1>
-                        <p>A country of ancient traditions, advanced technology.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="./assets/images/france.jpg" alt="">
-                    <div class="details">
-                        <h1>France</h1>
-                        <p>The epitome of romance, art, and exquisite cuisine.</p>
-                    </div>
-                </div>
-
-                <!-- arrow keys -->
-                <div class="left-arrow" id="left-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="m7.85 13l2.85 2.85q.3.3.288.7t-.288.7q-.3.3-.712.313t-.713-.288L4.7 12.7q-.3-.3-.3-.7t.3-.7l4.575-4.575q.3-.3.713-.287t.712.312q.275.3.288.7t-.288.7L7.85 11H19q.425 0 .713.288T20 12t-.288.713T19 13z" />
-                    </svg>
-                </div>
-                <div class="right-arrow" id="right-arrow">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                        <path fill="currentColor"
-                            d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z" />
-                    </svg>
-                </div>
-            </div>
+        <section class="booking-banner">
+            <h1>Book Your Dream Vacay Today!</h1>
         </section>
     </main>
     <footer>
@@ -163,7 +84,8 @@
                             <circle cx="11.994" cy="11.979" r="3.003" fill="currentColor" />
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
-                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="1.5"
                                 d="m13.081 10.712l-4.786-6.71a.6.6 0 0 0-.489-.252H5.28a.6.6 0 0 0-.488.948l6.127 8.59m2.162-2.576l6.127 8.59a.6.6 0 0 1-.488.948h-2.526a.6.6 0 0 1-.489-.252l-4.786-6.71m2.162-2.576l5.842-6.962m-8.004 9.538L5.077 20.25" />
                         </svg>
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24">
@@ -195,7 +117,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32">
                     <path fill="currentColor"
                         d="M10.35 16.122c0 .678-.539 1.194-1.222 1.194c-.511 0-.889-.289-.889-.833c0-.678.528-1.222 1.206-1.222c.517 0 .906.317.906.861zm-5.878-2.694h-.261c-.083 0-.167.056-.178.15l-.239 1.484l.456-.017c.611 0 1.083-.083 1.194-.789c.128-.745-.344-.828-.972-.828m15.778 0H20c-.1 0-.167.056-.178.15l-.233 1.484l.444-.017c.722 0 1.222-.167 1.222-1c-.006-.589-.533-.617-1.006-.617zM32 6.222v19.556a2.67 2.67 0 0 1-2.667 2.667H2.666a2.67 2.67 0 0 1-2.667-2.667V6.222a2.67 2.67 0 0 1 2.667-2.667h26.667A2.67 2.67 0 0 1 32 6.222M7.128 13.744c0-1.167-.9-1.556-1.928-1.556H2.978a.293.293 0 0 0-.289.261l-.911 5.672c-.017.111.067.222.178.222h1.056c.15 0 .289-.161.306-.317l.25-1.478c.056-.4.733-.261 1-.261c1.589 0 2.561-.944 2.561-2.544zm4.678.489H10.75c-.211 0-.222.306-.233.456c-.322-.472-.789-.556-1.317-.556c-1.361 0-2.4 1.194-2.4 2.511c0 1.083.678 1.789 1.761 1.789c.5 0 1.122-.272 1.472-.661a1.5 1.5 0 0 0-.056.345c0 .128.056.222.178.222h.956c.15 0 .278-.161.306-.317l.567-3.572c.017-.106-.067-.217-.178-.217m2.25 5.439l3.539-5.145c.028-.028.028-.056.028-.094c0-.094-.083-.194-.178-.194h-1.067a.32.32 0 0 0-.25.139l-1.472 2.167l-.611-2.083a.34.34 0 0 0-.306-.222H12.7c-.095 0-.178.1-.178.194c0 .067 1.083 3.156 1.178 3.45c-.15.211-1.139 1.589-1.139 1.756c0 .1.083.178.178.178h1.067a.33.33 0 0 0 .25-.144zm8.85-5.928c0-1.167-.9-1.556-1.928-1.556h-2.206a.31.31 0 0 0-.306.261l-.9 5.667c-.011.111.072.222.178.222h1.139c.111 0 .194-.083.222-.178l.25-1.611c.056-.4.734-.261 1-.261c1.578 0 2.55-.944 2.55-2.544zm4.677.489h-1.056c-.211 0-.222.306-.239.456c-.306-.472-.778-.556-1.317-.556c-1.361 0-2.4 1.194-2.4 2.511c0 1.083.678 1.789 1.761 1.789c.517 0 1.139-.272 1.472-.661c-.017.083-.056.261-.056.345c0 .128.056.222.178.222h.961c.15 0 .278-.161.306-.317l.567-3.572c.017-.106-.067-.217-.178-.217zm2.639-1.85c0-.111-.083-.194-.178-.194h-1.028c-.083 0-.167.067-.178.15l-.9 5.778l-.016.028c0 .1.083.194.194.194h.917c.139 0 .278-.161.289-.317l.9-5.622zm-5 2.878c-.678 0-1.206.539-1.206 1.222c0 .539.389.833.9.833c.667 0 1.206-.511 1.206-1.194c.006-.544-.383-.861-.9-.861" />
-                </svg>               
+                </svg>
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 32 32">
                     <path fill="currentColor"
                         d="M16.789 13.911c0 .956-.583 1.506-1.611 1.506h-1.35v-3.011h1.356c1.022 0 1.605.544 1.605 1.505m2.639 3.478c0 .461.4.761 1.028.761c.8 0 1.4-.505 1.4-1.217v-.428l-1.306.083c-.739.05-1.122.322-1.122.8zM32 6.167v19.556a2.67 2.67 0 0 1-2.667 2.667H2.666a2.67 2.67 0 0 1-2.667-2.667V6.167A2.67 2.67 0 0 1 2.666 3.5h26.667A2.67 2.67 0 0 1 32 6.167M7.1 12.733c.467.039.933-.233 1.228-.578c.289-.356.478-.833.428-1.317c-.411.017-.922.272-1.217.628c-.267.306-.494.8-.439 1.267m3.367 4.139c-.011-.011-1.089-.422-1.1-1.667c-.011-1.039.85-1.539.889-1.567c-.489-.722-1.245-.8-1.506-.817c-.678-.039-1.256.383-1.578.383c-.328 0-.817-.367-1.35-.355a1.99 1.99 0 0 0-1.694 1.033c-.728 1.256-.189 3.111.517 4.133c.344.505.761 1.061 1.306 1.039c.516-.022.722-.333 1.344-.333c.628 0 .806.333 1.35.328c.567-.011.917-.505 1.267-1.011c.383-.578.544-1.133.556-1.167zm7.522-2.966c0-1.478-1.028-2.489-2.495-2.489H12.65v7.578h1.178v-2.589h1.628c1.489 0 2.533-1.022 2.533-2.5m5 1.316c0-1.094-.878-1.8-2.222-1.8c-1.25 0-2.172.717-2.206 1.694h1.061c.089-.467.522-.772 1.111-.772c.722 0 1.122.333 1.122.956v.417l-1.467.089c-1.367.083-2.105.645-2.105 1.617c0 .983.761 1.633 1.855 1.633c.739 0 1.422-.372 1.733-.967h.022V19h1.089v-3.778zm5.678-1.728h-1.194l-1.383 4.478h-.022l-1.383-4.478h-1.239l1.994 5.517l-.105.333c-.178.567-.472.789-.994.789a6 6 0 0 1-.345-.017v.911c.067.022.361.028.45.028c1.15 0 1.689-.439 2.161-1.767z" />
@@ -220,4 +142,5 @@
 
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>

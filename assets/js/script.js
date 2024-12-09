@@ -3,7 +3,6 @@ var screenScrollY;
 var sideMenu = false;
 var translateX = 0;
 
-
 // elements
 var navbarEl = document.getElementById('navbar');
 var menuEl = document.querySelectorAll('header .menues a');
@@ -69,8 +68,7 @@ menuIconEl.addEventListener('click', () => {
                 sideMenuEl.style.display = 'flex';
                 sideMenu = true;
             }
-        })
-        
+        })       
     }
     else{
         // menuIconDivEl.innerHTML = '<i class="fa fa-bars menu-icon" id="menuIcon" aria-hidden="true"></i>'
@@ -87,34 +85,30 @@ function exploreMore() {
 }
 
 // distination section right left arrow function
-leftArrowEl.addEventListener('click', ()=>{
-    translateX += 410
-    if (translateX >= 820) {
+leftArrowEl.addEventListener('click', ()=>{   
+    if (translateX < 820) {
+        translateX += 410
+            cardsEl.forEach(card => {
+            card.style.transform = "translateX(" + translateX + "px)";
+        })
+        leftArrowEl.style.display = 'flex';       
+    }   
+    else if (translateX > 410) {
         leftArrowEl.style.display = 'none';       
-    }
-    else if (translateX < 900) {
-        leftArrowEl.style.display = 'block';
-    }
-    cardsEl.forEach(card => {
-        card.style.transform = "translateX(" + translateX + "px)";
-        
-    })
-    
+    }   
 })
 
-rightArrowEl.addEventListener('click', ()=>{
-    translateX -= 410
-    if (translateX == -820) {
-        rightArrowEl.style.display = 'none';
-    }
-    else{
-        rightArrowEl.style.display = 'flex';
-    }
-    cardsEl.forEach(card => {
-        card.style.transform = "translateX(" + translateX + "px)";
-    })
-
-    
+rightArrowEl.addEventListener('click', ()=>{   
+    if (translateX > -820) {
+        translateX -= 410
+            cardsEl.forEach(card => {
+            card.style.transform = "translateX(" + translateX + "px)";
+        })
+        rightArrowEl.style.display = 'flex';       
+    }   
+    else if (translateX < -410) {
+        rightArrowEl.style.display = 'none';       
+    }   
 })
 
 
