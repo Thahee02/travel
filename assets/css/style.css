@@ -294,6 +294,7 @@ main .booking-banner {
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     color: white;
@@ -303,6 +304,59 @@ main .booking-banner {
 
 main .booking-banner h1{
     font-size: 64px;
+}
+
+main .booking-banner .booking-section{
+    position: absolute;
+    width: 75%;
+    bottom: -450px;
+    border: 2px solid #e8e9eb;
+    padding: 40px 0px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 50;
+    background-color: #160647;
+}
+
+main .booking-banner .booking-section .booking-contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+main .booking-banner .booking-section .booking-form{
+    width: 60%;
+}
+
+main .booking-banner .booking-section .booking-form form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+main .booking-banner .booking-section .booking-form form input, main .booking-banner .booking-section .booking-form form select{
+    padding: 7px 10px;
+    outline: none;
+    cursor: context-menu;
+    border-radius: 2px;
+    border-color: #bcbcbc;
+
+}
+
+main .booking-banner .booking-section .booking-form form input[type=submit]{
+    padding: 8px 0;
+    background-color: #e3f700;
+    color: #160647;
+    border: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main .booking-banner2{
+    height: 500px;
 }
 
 /* End of Booking Page Section */
