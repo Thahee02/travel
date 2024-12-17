@@ -703,14 +703,31 @@ footer section:nth-child(3) div.payment{
         bottom: -35px;
     }
 
+    main .booking-banner h1 {
+        font-size: 54px;
+        margin-bottom: 0px;
+        line-height: 64px;
+    }
+
+    main .booking-banner .booking-section {
+        width: 82.5%;
+        bottom: -450px;
+        padding: 40px 0px;   
+    }
+
+    main .booking-banner .booking-section .booking-form {
+        width: 50%;
+    }
+
     footer {
-        padding: 60px 40px;
+        padding: 60px 80px;
         padding-bottom: 20px;
     }
 
     footer section:nth-child(1) {
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0px;
     }
 
     footer hr {
@@ -725,6 +742,7 @@ footer section:nth-child(3) div.payment{
         display: flex;
         justify-content: center;
         text-align: center;
+        margin: 0 auto;
         font-size: 14px;
     }
 
@@ -857,14 +875,54 @@ footer section:nth-child(3) div.payment{
         bottom: -35px;
     }
 
+    main .booking-banner {
+        padding: 0 40px;
+    }
+
+    main .booking-banner h1 {
+        font-size: 54px;
+        margin-bottom: 0px;
+        line-height: 64px;
+    }
+
+    main .booking-banner .booking-section {
+        width: 87.5%;
+        bottom: -800px;
+        padding: 40px 0px;
+        flex-direction: column-reverse;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    main .booking-banner .booking-section .booking-form {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    main .booking-banner2 {
+        height: 850px;
+    }
+
     footer {
-        padding: 60px 40px;
+        padding: 60px 60px;
         padding-bottom: 20px;
     }
 
     footer section:nth-child(1) {
-        flex-direction: column;
-        gap: 40px;
+        flex-direction: row;
+        gap: 0px;
     }
 
     footer hr {
@@ -1014,6 +1072,46 @@ footer section:nth-child(3) div.payment{
     main .distination-section .gallery .card .details {
         bottom: -35px;
     }    
+
+    main .booking-banner {
+        padding: 0 40px;
+    }
+
+    main .booking-banner h1 {
+        font-size: 54px;
+        margin-bottom: 0px;
+        line-height: 64px;
+    }
+
+    main .booking-banner .booking-section {
+        width: 85%;
+        bottom: -800px;
+        padding: 40px 0px;
+        flex-direction: column-reverse;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    main .booking-banner .booking-section .booking-form {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    main .booking-banner2 {
+        height: 850px;
+    }
 
     footer {
         padding: 60px 40px;
