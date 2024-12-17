@@ -57,7 +57,7 @@ header .menues{
 
 header .menues a{
     text-decoration: none;
-    color: #cecece;
+    color: #e1e1e1;
     font-weight: 400;
     cursor: pointer;
 }
@@ -289,7 +289,7 @@ main .booking-banner {
     background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
     background-image: url('../images/banner4.jpg');
     width: 100%;
-    height: 75vh;
+    height: 80vh;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -298,12 +298,13 @@ main .booking-banner {
     align-items: center;
     justify-content: center;
     color: white;
-    padding: 40px;
+    padding: 0px 40px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
 }
 
 main .booking-banner h1{
     font-size: 64px;
+    margin-bottom: 20px;
 }
 
 main .booking-banner .booking-section{
@@ -317,24 +318,47 @@ main .booking-banner .booking-section{
     align-items: center;
     justify-content: space-around;
     z-index: 50;
-    background-color: #160647;
+    background-color: #160647f0;
 }
 
 main .booking-banner .booking-section .booking-contact{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 20px;    
+}
+
+main .booking-banner .booking-section .booking-contact h2{
+    font-size: 36px;
+}
+
+main .booking-banner .booking-section .booking-contact svg{
+    padding: 10px;
+    background-color: #e8e9eb;
+    border-radius: 50%;
+    color: #160647;
+}
+
+main .booking-banner .booking-section .booking-contact span{
+    font-weight: bold;
 }
 
 main .booking-banner .booking-section .booking-form{
     width: 60%;
+    position: relative;
+}
+
+main .booking-banner .booking-section .booking-form lottie-player{
+    position: absolute;
+    opacity: 0.5;
+    z-index: -11;
 }
 
 main .booking-banner .booking-section .booking-form form{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    z-index: 3;
 }
 
 main .booking-banner .booking-section .booking-form form input, main .booking-banner .booking-section .booking-form form select{
@@ -343,6 +367,7 @@ main .booking-banner .booking-section .booking-form form input, main .booking-ba
     cursor: context-menu;
     border-radius: 2px;
     border-color: #bcbcbc;
+    background-color: #ffffffe4;
 
 }
 
@@ -353,6 +378,11 @@ main .booking-banner .booking-section .booking-form form input[type=submit]{
     border: none;
     font-weight: bold;
     font-size: 16px;
+    cursor: pointer;
+}
+
+main .booking-banner .booking-section .booking-form form input[type=submit]:hover{
+    background-color: #c2d300;
 }
 
 main .booking-banner2{
@@ -520,7 +550,7 @@ footer section:nth-child(3) div.payment{
     right: 0;
     background-color: #bcbcbc;
     display: none;
-    z-index: 10;
+    z-index: 50;
 }
 
 .side-menu ul{
@@ -1131,6 +1161,46 @@ footer section:nth-child(3) div.payment{
 
     main .distination-section .gallery .card .details{
         bottom: -20px;
+    }
+
+    main .booking-banner{
+        padding: 0 40px;
+    }
+
+    main .booking-banner h1 {
+        font-size: 54px;
+        margin-bottom: 0px;
+        line-height: 64px;
+    }
+
+    main .booking-banner .booking-section {
+        width: 80%;
+        bottom: -800px;
+        padding: 40px 0px;
+        flex-direction: column-reverse;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    main .booking-banner .booking-section .booking-contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    main .booking-banner .booking-section .booking-form {
+        width: 90%;
+        margin-bottom: 50px;
+    }
+
+    main .booking-banner2 {
+        height: 850px;
     }
 
     footer {

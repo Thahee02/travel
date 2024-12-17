@@ -40,12 +40,12 @@ document.addEventListener('scroll', () => {
         navbarEl.style.color = '#e8e9eb';
         navbarEl.style.top = '5px';
         menuEl.forEach(menu =>{
-            menu.style.color = "#cecece";
+            menu.style.color = "#e1e1e1";
             menu.addEventListener('mouseover', () => {
                 menu.style.color = "#f3f3f3";
             })
             menu.addEventListener('mouseleave', () => {
-                menu.style.color = "#cecece";
+                menu.style.color = "#e1e1e1";
             })
         })
         menuIconEl.style.color = "#bcbcbc"
