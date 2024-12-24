@@ -364,7 +364,7 @@ main .booking-banner .booking-section .booking-form form{
 main .booking-banner .booking-section .booking-form form input, main .booking-banner .booking-section .booking-form form select{
     padding: 7px 10px;
     outline: none;
-    cursor: context-menu;
+    cursor: pointer;
     border-radius: 2px;
     border-color: #bcbcbc;
     background-color: #ffffffe4;
@@ -390,6 +390,59 @@ main .booking-banner2{
 }
 
 /* End of Booking Page Section */
+
+/* Start of Gallery Page Section */
+
+main .gallery-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9));
+    background-image: url('../images/gallery-banner.jpg');
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0px 40px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+main .gallery-banner h1 {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+main .gallery-banner .district-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 40px;
+    text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+}
+
+main .gallery-banner .district-section a{
+    padding: 8px 10px;
+    background-color: #e3f700;
+    color: #160647;
+    border: none;
+    border-radius: 2px;
+    /* font-weight: bold; */
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+main .gallery-banner .district-section a:hover{
+    background-color: #c2d300;
+}
+
+/* End of Gallery Section */
+
+/* Start of Footer Section */
 
 footer{
     background-image: url('../images/footer.jpg');
@@ -536,6 +589,10 @@ footer section:nth-child(3) div.payment{
     align-items: center;
     gap: 20px;
 }
+
+/* End of Footer Section */
+
+/* Side menu */
 
 .side-menu{
     position: fixed;
@@ -717,6 +774,14 @@ footer section:nth-child(3) div.payment{
 
     main .booking-banner .booking-section .booking-form {
         width: 50%;
+    }
+
+    main .gallery-banner h1 {
+        font-size: 64px;
+        margin-top: 60px;
+        margin-bottom: 40px;
+        line-height: 64px;
+        text-align: center;
     }
 
     footer {
@@ -913,6 +978,27 @@ footer section:nth-child(3) div.payment{
 
     main .booking-banner2 {
         height: 850px;
+    }
+
+    main .gallery-banner {
+        padding: 180px 40px;
+        padding-bottom: 60px;
+        height: 100vh;
+        gap: 30px;
+    }
+
+    main .gallery-banner h1 {
+        font-size: 48px;
+        margin-bottom: 0px;
+        line-height: 56px;
+        text-align: center;
+    }
+
+    main .gallery-banner .district-section {
+        justify-content: center;
+        gap: 10px;
+        padding: 0 0px;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
     }
 
     footer {
@@ -1113,6 +1199,26 @@ footer section:nth-child(3) div.payment{
         height: 850px;
     }
 
+    main .gallery-banner {
+        padding: 180px 40px;
+        padding-bottom: 60px;
+        height: 100vh;
+        gap: 30px;
+    }
+
+    main .gallery-banner h1 {
+        font-size: 42px;
+        margin-bottom: 0px;
+        line-height: 48px;
+    }
+
+    main .gallery-banner .district-section {
+        justify-content: start;
+        gap: 10px;
+        padding: 0 0px;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+    }
+
     footer {
         padding: 60px 40px;
         padding-bottom: 20px;
@@ -1299,6 +1405,26 @@ footer section:nth-child(3) div.payment{
 
     main .booking-banner2 {
         height: 850px;
+    }
+
+    main .gallery-banner {
+        padding: 180px 40px;
+        padding-bottom: 60px;
+        height: auto;
+        gap: 20px;
+    }
+
+    main .gallery-banner h1 {
+        font-size: 36px;
+        margin-bottom: 0px;
+        line-height: 48px;
+    }
+
+    main .gallery-banner .district-section {
+        justify-content: start;
+        gap: 10px;
+        padding: 0 0px;
+        text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
     }
 
     footer {
