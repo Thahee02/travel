@@ -438,6 +438,41 @@ main .gallery-banner .district-section a{
 
 main .gallery-banner .district-section a:hover{
     background-color: #c2d300;
+    text-decoration: underline;
+}
+
+main .district-gallery{
+    display: flex;
+}
+
+main .district-gallery .gallery-section{
+    padding: 120px 80px;
+    padding-top: 160px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+main .district-gallery .gallery-section .card{
+    width: 350px;
+}
+
+main .district-gallery .gallery-section .card img{
+    width: 100%;
+    height: 250px;
+    transform: rotate(-5deg);
+    border-radius: 3px;
+    border: 4px solid #4CAF50;
+    padding: 1px;
+    object-position: center;
+    object-fit: cover;
+}
+
+main .district-gallery .gallery-section .card img:hover{
+    
 }
 
 /* End of Gallery Section */
@@ -779,9 +814,9 @@ footer section:nth-child(3) div.payment{
     main .gallery-banner h1 {
         font-size: 64px;
         margin-top: 60px;
+        text-align: center;
         margin-bottom: 40px;
         line-height: 64px;
-        text-align: center;
     }
 
     footer {
@@ -989,6 +1024,7 @@ footer section:nth-child(3) div.payment{
 
     main .gallery-banner h1 {
         font-size: 48px;
+        margin-top: 0;
         margin-bottom: 0px;
         line-height: 56px;
         text-align: center;
@@ -1213,7 +1249,7 @@ footer section:nth-child(3) div.payment{
     }
 
     main .gallery-banner .district-section {
-        justify-content: start;
+        justify-content: center;
         gap: 10px;
         padding: 0 0px;
         text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
@@ -1418,6 +1454,7 @@ footer section:nth-child(3) div.payment{
         font-size: 36px;
         margin-bottom: 0px;
         line-height: 48px;
+        text-align: start;
     }
 
     main .gallery-banner .district-section {
