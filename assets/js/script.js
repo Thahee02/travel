@@ -137,7 +137,14 @@ function displayPlaces(district){
     var mannar = ['https://mahaweli.lk/wp-content/uploads/2024/02/Mannar-Fort.jpg', 'https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2024/06/earth_from_space_adam_s_bridge/26180278-1-eng-GB/Earth_from_Space_Adam_s_Bridge.jpg', 'https://static.wixstatic.com/media/ba255b_7c84d4a295b3416b826cd465cea91380~mv2.jpg/v1/fill/w_1197,h_1084,al_c,q_85/Sri_Lanka_723awix.jpg']
     var matale = ['https://tripjive.com/wp-content/uploads/2024/10/Day-trip-to-Knuckles-Mountain-Range-from-Kandy.jpg', 'https://www.lakpura.com/images/LK94009697-01-E.JPG', 'https://wisdomleisure.com/wp-content/uploads/2023/05/caption-2.jpg']
     var matara = ['https://www.lovesrilanka.org/wp-content/uploads/2020/06/LSL_B2_Dondra-Head-Lighthouse_800x520.jpg', 'https://cdn.theatlantic.com/media/img/photo/2023/11/photos-star-forts/a01_1280046349-1/original.jpg', 'https://upload.wikimedia.org/wikipedia/commons/f/fc/Dondra_Head_Lighthouse_-_ATennakoon.jpg']
-
+    var monaragala = ['https://www.lakpura.com/images/LK94009912-01-E.JPG', 'https://tury.club/turyclub.img.php?src=7786c37b1057e8daa197cb1d7cc8aec7%2F2ptmhPHR%2F17mF5DWg_D.jpg&img=3604c858d7dec73777aef0606326e26d', 'https://www.bluelankatours.com/wp-content/uploads/2019/07/Gal-oya-national-park.jpg']
+    var mullaitivu = ['https://dayouting.lk/img_uploads/tourist-places/4289781675840482.jpg', 'https://www.lakpura.com/images/LK94008142-04-E.JPG', 'https://sunwayholidays.lk/storage/destination/free-photo-of-people-standing-near-shipwrec-1325.jpg']
+    var nuwaraEliya = ['https://tripjive.com/wp-content/uploads/2024/10/Day-trip-to-Hakgala-Botanical-Gardens-from-Nuwara-Eliya.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfaOnOEbEYtbxjPt8KQa1s1YL1aU0E3lYzxA&s', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQBMlT8E2GYtxPyOCIjpO8kE-4501dz9qfog&s']
+    var polonnaruwa = ['https://www.lakpura.com/images/LK94009746-01-E.JPG', 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/33/ed/59.jpg', 'https://www.lanka-excursions-holidays.com/uploads/4/0/2/1/40216937/6212668_orig.jpg']
+    var puttalam = ['https://kitejungle.com/wp-content/uploads/2017/03/kalpitiya-lagoon-kite.jpg', 'https://www.sundaytimes.lk/211010/uploads/93.jpg', 'https://www.attractionsinsrilanka.com/wp-content/uploads/2021/01/Baththalangunduwa.jpg']
+    var ratnapura = ['https://www.ceylonexpeditions.com/medias/destination_places/big/110/sri-pada-adam-s-peak-sri-lanka.jpg', 'https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/0b/20/e8/11.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRRVs65Hd_QUuh9vkrg0bKtZmhclEXZb79Tag&s']
+    var trincomalee = ['https://ramayanatours.com/wp-content/uploads/2017/03/Thiru-Koneswaram-Temple-1024x680.jpg', 'https://www.lovesrilanka.org/wp-content/uploads/2020/04/LS_PigeonIslandDesktop_1920x7001.jpg', 'https://cdn-cmaji.nitrocdn.com/KIFZgOjkuClQKBjYuclpHfqgfzwfBwhH/assets/images/optimized/rev-a5bb756/mysltravel.com/wp-content/uploads/2022/08/Kanniya-Hotspring-4.jpg']
+    var vavuniya = ['https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQbhp0k20UPf_fM1ZtAArGXTKVF8e6HfOCwJg&s', 'https://media.evendo.com/locations-resized/LandmarkImages/360x263/2ef52d23-e44b-44b5-be09-ca5c98a62887', 'https://www.trodly.com/pictures/attraction/x6482.jpg.pagespeed.ic.mYuOWMQKZe.jpg']
 
     var places = undefined
 
@@ -189,7 +196,30 @@ function displayPlaces(district){
     else if (district.title == 'matara') {
         places = matara
     }
-    
+    else if (district.title == 'monaragala') {
+        places = monaragala
+    }
+    else if (district.title == 'mullaitivu') {
+        places = mullaitivu
+    }
+    else if (district.title == 'nuwaraEliya') {
+        places = nuwaraEliya
+    }
+    else if (district.title == 'polonnaruwa') {
+        places = polonnaruwa
+    }
+    else if (district.title == 'puttalam') {
+        places = puttalam
+    }
+    else if (district.title == 'ratnapura') {
+        places = ratnapura
+    }
+    else if (district.title == 'trincomalee') {
+        places = trincomalee
+    }
+    else if (district.title == 'vavuniya') {
+        places = vavuniya
+    }
 
     places.map(place => {
         // Get the parent element
