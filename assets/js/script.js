@@ -121,6 +121,17 @@ rightArrowEl.addEventListener('click', ()=>{
 function displayPlaces(district){
     districtGallery.innerHTML = ""
 
+    // Create the gallery section heading
+    const gallerySectionHeading = document.createElement("h1");
+    gallerySectionHeading.className = "gallery-section-heading";
+    gallerySectionHeading.innerText = "-" + district.title.toUpperCase() + "-"
+
+    // Create the gallery section
+    const gallerySection = document.createElement("div");
+    gallerySection.className = "gallery-section";
+
+    districtGallery.appendChild(gallerySectionHeading);
+
     var ampara = ['https://voiceofmedia.lk/wp-content/uploads/2023/04/hu.jpg', 'https://us.lakpura.com/cdn/shop/files/LKI9256041-01-E.jpg?v=1661430881&width=3840', 'https://srilankafinder.com/wp-content/uploads/2017/10/Lahugala-Sanctuary-700x500.jpg']
     var anuradhapura = ['https://travelsetu.com/apps/uploads/new_destinations_photos/destination/2024/06/27/c813895d73c20cdb3d219e61d8e03b18_1000x1000.jpg', 'https://lanka-houses.com/media/Sightseeings/Isurumuniya_Temple/7.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQw_utp9BrNLz-Dfg7fHnFD1-qBT8sb0q-khg&s']
     var badulla = ['https://www.attractionsinsrilanka.com/wp-content/uploads/2019/09/Dunhinda-Falls-2.jpg', 'https://www.lovidhu.com/uploads/posts/2021/05//nine-arch-bridge-demodara-sri-lanka-945x630.jpg', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRKU9V2wCSBTHYYNbjoi5mN6kh9B6Ag8ebXBg&s']
@@ -222,10 +233,8 @@ function displayPlaces(district){
     }
 
     places.map(place => {
-        // Get the parent element
-        // Create the gallery section
-        const gallerySection = document.createElement("div");
-        gallerySection.className = "gallery-section";
+
+        
 
         // Create the card
         const card = document.createElement("div");
@@ -241,10 +250,11 @@ function displayPlaces(district){
 
         // Append the card to the gallery section
         gallerySection.appendChild(card);
+    })
+    
+    // Append the gallery section to the district gallery
+    districtGallery.appendChild(gallerySection);
 
-        // Append the gallery section to the district gallery
-        districtGallery.appendChild(gallerySection);
-    })  
 }
 
 

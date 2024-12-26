@@ -442,12 +442,20 @@ main .gallery-banner .district-section a:hover{
 }
 
 main .district-gallery{
+    padding: 100px 0;
     display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+main .district-gallery .gallery-section-heading{
+    font-size: 56px;
+    text-align: center;
 }
 
 main .district-gallery .gallery-section{
-    padding: 120px 80px;
-    padding-top: 160px;
+    padding: 40px 80px;
+    padding-top: 0px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -1458,10 +1466,14 @@ footer section:nth-child(3) div.payment{
     }
 
     main .gallery-banner .district-section {
-        justify-content: start;
+        justify-content: center;
         gap: 10px;
         padding: 0 0px;
         text-shadow: 0px 0px 0px rgba(0, 0, 0, 0.6);
+    }
+
+    main .district-gallery .gallery-section-heading {
+        font-size: 48px;
     }
 
     footer {
